@@ -13,7 +13,15 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     color: #555;
   }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
 `;
+
 
 export const sharedStyles = css`
   background-color: #eee;
@@ -41,13 +49,19 @@ export const StyledForm = styled.form`
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
 `;
 
 export const StyledInput = styled.input`
-  display: block;
-  width: 100%;
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 3px;
   ${sharedStyles}
 `;
+
+
 
 export const StyledTextArea = styled.textarea`
   background-color: #eee;

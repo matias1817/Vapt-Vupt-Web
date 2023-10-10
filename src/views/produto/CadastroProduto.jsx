@@ -1,49 +1,73 @@
 import React from 'react';
-//import styled from 'styled-components';
+import styled from 'styled-components';
 import { StyledForm, StyledInput, StyledButton, GlobalStyle,  StyledFormWrapper} from './FormComponents';
 import { Header } from '../components/header';
 
+const StyledHeader = styled.h1`
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+`;
+
+const StyledLabel = styled.label`
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+`;
+
+const StyledFormContainer = styled.div`
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+`;
+
+const StyledSubmitButton = styled(StyledButton)`
+  background-color: #f7797d;
+  color: #fff;
+  font-size: 0.9rem; 
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+`;
+
 export default function CadastroProduto(){
-  
-  
-  
     return (
       <>
         <GlobalStyle />
-        <Header/>
+        <Header />
         <StyledFormWrapper>
-          <StyledForm >
-            <h2>Cadastro de produto</h2>
-            <label htmlFor="name">Nome</label>
+          <StyledForm>
+            <StyledHeader>Cadastro de Produto</StyledHeader>
+        
+            <StyledLabel htmlFor="name">Nome</StyledLabel>
             <StyledInput
               type="text"
               name="name"
-             
             />
-            <label htmlFor="email">Categoria</label>
+            <StyledLabel htmlFor="category">Categoria</StyledLabel>
             <StyledInput
-              type="email"
-              name="email"
-            
+              type="text"
+              name="category"
             />
-             <label htmlFor="email">preco</label>
+            <StyledLabel htmlFor="price">Preço</StyledLabel>
             <StyledInput
-              type="email"
-              name="email"
-            
+              type="number"
+              name="price"
             />
-            <label htmlFor="email">descricao</label>
+            <StyledLabel htmlFor="description">Descrição</StyledLabel>
             <StyledInput
-              type="email"
-              name="email"
-            
+              type="text"
+              name="description"
             />
-           
        
-           
-            <StyledButton type="submit">Salvar</StyledButton>
+            <StyledSubmitButton type="submit">Salvar</StyledSubmitButton>
           </StyledForm>
         </StyledFormWrapper>
       </>
     );
-  }
+}

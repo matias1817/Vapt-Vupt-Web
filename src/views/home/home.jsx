@@ -59,6 +59,8 @@ export default function Home () {
       <Header />
       <br />
       <h1 className='text-2xl font-semibold text-zinc-800 mb-4'>Meus Produtos</h1>
+<Link to={'/cad'}>
+
 
       <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8'>
         {products.map((product) => (
@@ -84,6 +86,7 @@ export default function Home () {
           </div> </div>
         ))}
       </div>
+      </Link>
     </>
   );
 }

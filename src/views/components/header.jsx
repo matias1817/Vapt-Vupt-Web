@@ -8,10 +8,14 @@ import {
   MagnifyingGlassIcon,
 
   PhoneIcon,
+
+  PlusIcon,
+  QueueListIcon
  
 } from '@heroicons/react/24/solid';
 
 import  React from 'react'
+
 
 export function Header () {
   
@@ -28,7 +32,7 @@ export function Header () {
            
             <li>
               <Link
-                to='/'
+                to='/home'
                 className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
               >
                 <HomeIcon className='w-4 h-4 text-gray-700' />{' '}
@@ -37,20 +41,20 @@ export function Header () {
             </li>
             <li>
               <Link
-                to='/about'
+                to='/cad'
                 className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
               >
-                <BuildingOfficeIcon className='w-4 h-4 text-gray-700' />{' '}
-                <p className='hidden md:block'>About</p>
+                <PlusIcon className='w-4 h-4 text-gray-700' />{' '}
+                <p className='hidden md:block'>Cadastro de Produto</p>
               </Link>
             </li>
             <li>
               <Link
-                to='/contact'
+                to='/Pedidos'
                 className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
               >
-                <PhoneIcon className='w-4 h-4 text-gray-700' />{' '}
-                <p className='hidden md:block'>Contact</p>
+                <QueueListIcon className='w-4 h-4 text-gray-700' />{' '}
+                <p className='hidden md:block'>Pedidos</p>
               </Link>
             </li>
            
@@ -59,7 +63,8 @@ export function Header () {
             <button
               className='ml-4 bg-red-500 text-white p-2 px-4 rounded-md items-center gap-2 hidden md:flex'
             >
-              Login
+           <Link
+                    to={'/'}>  Login</Link>
             </button>
           
             <div className='shadow-lg transition-all fixed top-full -right-[100%] bg-white h-screen p-4 px-8'>
@@ -76,7 +81,7 @@ export function Header () {
                   </li>
                   <li>
                     <Link
-                      to='/'
+                      to='/home'
                       className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
                     >
                       <HomeIcon className='w-4 h-4 text-gray-700' /> <p>Home</p>
@@ -84,28 +89,32 @@ export function Header () {
                   </li>
                   <li>
                     <Link
-                      to='/'
+                      to='/cad'
                       className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
                     >
                       <BuildingOfficeIcon className='w-4 h-4 text-gray-700' />{' '}
-                      <p>About</p>
+                      <p>cadastro produto</p>
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to='/'
+                      to='/pedido'
                       className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
                     >
                       <PhoneIcon className='w-4 h-4 text-gray-700' />{' '}
-                      <p>Contact</p>
+                      <p>Pedidos
+                      </p>
                     </Link>
                   </li>
                   
                 </ul>
                  
                   <button className='ml-4 bg-red-ff3131 text-white p-2 px-4 rounded-md items-center gap-2 hidden md:flex'
+                
                   >
-                    Login
+                    <Link
+                    to={'/'}>  Login</Link>
+                  
                   </button>
                 
               </>
