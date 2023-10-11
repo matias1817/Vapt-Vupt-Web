@@ -50,7 +50,7 @@ export function Header () {
             </li>
             <li>
               <Link
-                to='/Pedidos'
+                to='/pedido'
                 className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
               >
                 <QueueListIcon className='w-4 h-4 text-gray-700' />{' '}
