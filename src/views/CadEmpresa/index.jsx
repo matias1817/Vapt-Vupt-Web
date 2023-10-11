@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function CadEmpresa() {
     return (
-        <Container>
+       <Container> 
             <div className="container">
                 <div className="container1">
                     <Card>

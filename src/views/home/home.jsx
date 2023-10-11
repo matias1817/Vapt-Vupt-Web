@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { StarIcon } from '@heroicons/react/24/solid';
 import { Header } from '../components/header';
+
 
 export default function Home () {
   // Suponhamos que você tenha uma matriz de produtos chamada "products"
@@ -56,6 +56,7 @@ export default function Home () {
 
   return (
     <>
+
       <Header />
       <br />
       <h1 className='text-2xl font-semibold text-zinc-800 mb-4'>Meus Produtos</h1>
@@ -87,6 +88,7 @@ export default function Home () {
         ))}
       </div>
       </Link>
+   
     </>
   );
 }

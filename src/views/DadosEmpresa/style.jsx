@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 
 const moveToRight = keyframes`
-
 0% {
   opacity: 0;
   transform: translate(-200px);
