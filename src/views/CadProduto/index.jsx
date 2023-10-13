@@ -2,10 +2,10 @@ import { Button, Card, CardHeader, Grid, TextField } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Form } from "./style";
-import { Header } from "../components/header";
+import { Header } from '../components/header';
 
 
-export default function DadosEmpresa() {
+export default function CadastroProduto() {
     return (
         <Container>
             <Header />
@@ -13,17 +13,17 @@ export default function DadosEmpresa() {
                 <div className="container1">
                     <Card>
                         <CardHeader
-                            title="Dados da empresa"
+                            title="Cadastro de Produto"
                         />
                     </Card>
                     <br />
                     <Form>
-                        <h2>Dados da empresa</h2>
+                        <h2>Cadastro de Produto</h2>
                         <Grid container spacing={2} className="input">
                             <Grid item xs={12}>
                                 <TextField fullWidth
                                     id="outlined-basic"
-                                    label="Nome da empresa"
+                                    label="Nome"
                                     variant="outlined"
                                 />
                             </Grid>
@@ -32,7 +32,7 @@ export default function DadosEmpresa() {
                             <Grid item xs={7}>
                                 <TextField fullWidth
                                     id="outlined-basic"
-                                    label="Rua"
+                                    label="Categoria"
                                     variant="outlined"
                                 />
                             </Grid>
@@ -40,7 +40,7 @@ export default function DadosEmpresa() {
                             <Grid item xs={5}>
                                 <TextField fullWidth
                                     id="outlined-basic"
-                                    label="Bairro"
+                                    label="Preco"
                                     variant="outlined"
                                 />
                             </Grid>
@@ -52,39 +52,14 @@ export default function DadosEmpresa() {
                                 <TextField fullWidth
 
                                     id="outlined-basic"
-                                    label="Cdade"
+                                    label="Descrição"
                                     variant="outlined"
                                 />
                             </Grid>
 
-                            <Grid item xs={6}>
-                                <TextField fullWidth
-
-                                    id="outlined-basic"
-                                    label="Estado"
-                                    variant="outlined"
-                                />
-                            </Grid>
+                           
                         </Grid>
-                        <Grid container spacing={2} className="input">
-                            <Grid item xs={6}>
-                                <TextField fullWidth
-
-                                    id="outlined-basic"
-                                    label="Cozinha Especifica"
-                                    variant="outlined"
-                                />
-                            </Grid>
-
-                            <Grid item xs={6}>
-                                <TextField fullWidth
-
-                                    id="outlined-basic"
-                                    label="Horário de funcionamento"
-                                    variant="outlined"
-                                />
-                            </Grid>
-                        </Grid>
+                      
                         <Grid container spacing={2}>
                             <Grid item xs={6}>
                                 <Button className="buttonStyles"
@@ -99,7 +74,7 @@ export default function DadosEmpresa() {
                                     variant="contained"
                                     
                                     component={Link}
-                                    to="/" >
+                                    to="/home" >
                                     Voltar
                                 </Button>
                         </Grid>

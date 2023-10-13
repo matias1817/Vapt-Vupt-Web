@@ -64,7 +64,9 @@ export default function Login() {
                         <Button className="buttonStyles"
                                     variant="contained"
                                     component={Link}
-                                    to="/dados-empresa" >
+                                    to="/home" >
+
+                                        
                                     Login
                                 </Button>
                             <div className="checkbox">
