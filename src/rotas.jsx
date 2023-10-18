@@ -17,8 +17,6 @@ function Rotas(){
         <Route path="/pedido" element={<Pedido/>}/>
         <Route path="/cad-empresa" element={<CadEmpresa/>}/>
         <Route path="/dados-empresa" element={<DadosEmpresa/>}/>
-
-
     </Routes>
     </>
     )

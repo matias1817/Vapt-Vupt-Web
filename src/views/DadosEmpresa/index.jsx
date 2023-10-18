@@ -18,7 +18,7 @@ export default function DadosEmpresa() {
                     </Card>
                     <br />
                     <Form>
-                        <h2>Dados da empresa</h2>
+                        
                         <Grid container spacing={2} className="input">
                             <Grid item xs={12}>
                                 <TextField fullWidth
@@ -99,7 +99,7 @@ export default function DadosEmpresa() {
                                     variant="contained"
                                     
                                     component={Link}
-                                    to="/" >
+                                    to="/home" >
                                     Voltar
                                 </Button>
                         </Grid>

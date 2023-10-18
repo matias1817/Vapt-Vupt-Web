@@ -16,7 +16,7 @@ export default function CadEmpresa() {
                     </Card>
                     <br />
                     <Form>
-                        <h2>Cadastro de empresa</h2>
+               
                         
                         <Grid container spacing={2} className="input">
                             <Grid item xs={5}>
