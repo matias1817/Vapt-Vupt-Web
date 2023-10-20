@@ -57,7 +57,7 @@ export function Header () {
                 <p className='hidden md:block'>Pedidos</p>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to='/dados-empresa'
                 className='p-2 md:px-4 hover:bg-gray-50 rounded-md flex items-center gap-2'
@@ -66,7 +66,7 @@ export function Header () {
                 <DocumentChartBarIcon className='w-4 h-4 text-gray-700' />{' '}
                 <p className='hidden md:block'>Meus dados</p>
               </Link>
-            </li>
+            </li> */}
            
           </ul>
           

@@ -1,11 +1,13 @@
-import { Button, Card, CardHeader, Grid, TextField } from "@mui/material";
+import { Button, Card, CardHeader, Grid, MenuItem, Select, TextField } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Form } from "./style";
 import { Header } from "../components/header";
+//import { MenuItem } from "material-ui";
 
 
 export default function DadosEmpresa() {
+    const categorias = ["Arabe", "Italiana", "Hambugeria", "Tematico", "Brasileira", "Japonesa", "Chinesa"];
     return (
         <Container>
             <Header />
@@ -44,7 +46,21 @@ export default function DadosEmpresa() {
                                     variant="outlined"
                                 />
                             </Grid>
+                            <Grid item xs={5}>
+                                <TextField fullWidth
+                                    id="outlined-basic"
+                                    label="CNPJ"
+                                    variant="outlined"
+                                />
+                            </Grid>
 
+                            <Grid item xs={7}>
+                                <TextField fullWidth
+                                    id="outlined-basic"
+                                    label="Email"
+                                    variant="outlined"
+                                />
+                            </Grid>
                         </Grid>
 
                         <Grid container spacing={2} className="input">
@@ -52,7 +68,7 @@ export default function DadosEmpresa() {
                                 <TextField fullWidth
 
                                     id="outlined-basic"
-                                    label="Cdade"
+                                    label="Cidade"
                                     variant="outlined"
                                 />
                             </Grid>
@@ -68,12 +84,18 @@ export default function DadosEmpresa() {
                         </Grid>
                         <Grid container spacing={2} className="input">
                             <Grid item xs={6}>
-                                <TextField fullWidth
-
-                                    id="outlined-basic"
-                                    label="Cozinha Especifica"
+                               
+                            <Select
+                                    label="Categoria"
                                     variant="outlined"
-                                />
+                                    fullWidth
+                                >
+                                    {categorias.map((categoria, index) => (
+                                        <MenuItem key={index} value={categoria}>
+                                            {categoria}
+                                        </MenuItem>
+                                    ))}
+                                </Select>
                             </Grid>
 
                             <Grid item xs={6}>
@@ -84,6 +106,23 @@ export default function DadosEmpresa() {
                                     variant="outlined"
                                 />
                             </Grid>
+                            <Grid item xs={6}>
+                                <TextField fullWidth
+
+                                    id="outlined-basic"
+                                    label="Senha"
+                                    variant="outlined"
+                                />
+                            </Grid>
+
+                            <Grid item xs={6}>
+                                <TextField fullWidth
+
+                                    id="outlined-basic"
+                                    label="Repetir senha"
+                                    variant="outlined"
+                                />
+                            </Grid>
                         </Grid>
                         <Grid container spacing={2}>
                             <Grid item xs={6}>
@@ -91,7 +130,7 @@ export default function DadosEmpresa() {
                                     variant="contained"
                                     color="success"
                                      >
-                                    Salvar alterações
+                                    Cadastrar empresa
                                 </Button>
                             </Grid>
                             <Grid item xs={6}>
