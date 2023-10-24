@@ -6,6 +6,7 @@ import Home from "./views/home/home";
 import Pedido from "./views/pedido/pedido";
 import CadEmpresa from "./views/CadEmpresa/index"
 import DadosEmpresa from "./views/DadosEmpresa";
+import Administrador from "./views/Adm/indexx"
 
 function Rotas(){
     return (
@@ -16,6 +17,7 @@ function Rotas(){
         <Route path="/home" element={<Home/>}/>
         <Route path="/pedido" element={<Pedido/>}/>
         <Route path="/cad-empresa" element={<DadosEmpresa/>}/>
+        <Route path="/adm" element={<Administrador/>}/>
         {/* <Route path="/dados-empresa" element={<DadosEmpresa/>}/> */}
     </Routes>
     </>

@@ -81,7 +81,7 @@ export default function Login() {
                                 Cadastre seu restaurante. <a href="/cad-empresa">Cadastrar</a>
                             </p>
                             <p>
-                                Area do adiministrador. <a href="/">Entrar</a>
+                                Area do adiministrador. <a href="/adm">Entrar</a>
                             </p>
                         </div>
                     </Form>
