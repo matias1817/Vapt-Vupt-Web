@@ -6,8 +6,14 @@ import { Header } from '../components/header';
 //import styled, { keyframes } from "styled-components";
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/base/TextareaAutosize';
 import { styled } from '@mui/system';
+import { MuiFileInput } from 'mui-file-input'
 
 export default function CadastroProduto() {
+    const [value, setValue] = React.useState(null)
+
+    const handleChange = (newValue) => {
+      setValue(newValue)
+    }
     const categorias = ["Bebida", "Salgado", "Doce"];
     const blue = {
         100: '#DAECFF',
@@ -33,7 +39,7 @@ export default function CadastroProduto() {
     
       const Textarea = styled(TextareaAutosize)(
         ({ theme }) => `
-        width: 320px;
+        width: 615px;
         font-family: IBM Plex Sans, sans-serif;
         font-size: 0.875rem;
         font-weight: 400;
@@ -113,7 +119,11 @@ export default function CadastroProduto() {
                         <Textarea aria-label="Descrição" minRows={3} placeholder="Descrição" />
                             </Grid>
 
-
+                        </Grid>
+                        <Grid container spacing={2} className="input">
+                        <Grid item xs={6}>
+                            <MuiFileInput value={value} onChange={handleChange} label='Foto' style={{ width: '615px' }} />
+</Grid>
                         </Grid>
 
                         <Grid container spacing={2}>
