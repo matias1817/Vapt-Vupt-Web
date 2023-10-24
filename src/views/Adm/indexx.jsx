@@ -2,10 +2,13 @@
 /* eslint-disable no-undef */
 import React, { useState } from "react";
 import { Container, Form, Logo } from "./style";
+import { Link } from "react-router-dom";
+
 import {
     Button,
     Card,
     CardHeader,
+    Grid,
     TableContainer,
     Table,
     TableHead,
@@ -177,13 +180,26 @@ function CollapsibleTable() {
                     </TableRow>
                 </TableHead>
                 <TableBody>
+                    
                     {rows.map((row) => (
                         <Row key={row.nomeRestaurante} row={row} />
                     ))}
                 </TableBody>
             </Table>
+            <Grid item xs={12}>
+                                <Button className="buttonStyles"
+                                    variant="contained"
+                                    color="success"
+                                    component={Link}
+                                    to="/" 
+                                     >
+                                    Voltar
+                                </Button>
+                            </Grid>
         </TableContainer>
+        
     );
+    
 }
 
 function Administrador() {

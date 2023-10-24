@@ -22,14 +22,23 @@ export default function DadosEmpresa() {
                     <Form>
                         
                         <Grid container spacing={2} className="input">
-                            <Grid item xs={12}>
+                            <Grid item xs={6}>
                                 <TextField fullWidth
                                     id="outlined-basic"
                                     label="Nome da empresa"
                                     variant="outlined"
                                 />
                             </Grid>
-                        </Grid>
+                        
+                        
+                            <Grid item xs={6}>
+                                <TextField fullWidth
+                                    id="outlined-basic"
+                                    label="Nome do proprietário"
+                                    variant="outlined"
+                                />
+                            </Grid>
+                    </Grid>
                         <Grid container spacing={2} className="input">
                             <Grid item xs={7}>
                                 <TextField fullWidth
@@ -49,7 +58,7 @@ export default function DadosEmpresa() {
                             <Grid item xs={5}>
                                 <TextField fullWidth
                                     id="outlined-basic"
-                                    label="CNPJ"
+                                    label="CNPJ / CPF"
                                     variant="outlined"
                                 />
                             </Grid>

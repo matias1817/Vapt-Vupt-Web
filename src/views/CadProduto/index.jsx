@@ -8,9 +8,6 @@ import { styled } from '@mui/system';
 import { MuiFileInput } from 'mui-file-input'
 
 export default function CadastroProduto() {
-<<<<<<< HEAD
-    
-=======
     const [value, setValue] = React.useState(null)
 
     const handleChange = (newValue) => {
@@ -66,9 +63,7 @@ export default function CadastroProduto() {
         &:focus-visible {
           outline: 0;
         }
-      `,
-      )
->>>>>>> 87a095208a91da0b80671c1e096d1a266dad2bde
+      `,      )
     return (
         <Container>
             <Header />
@@ -120,20 +115,14 @@ export default function CadastroProduto() {
                                     variant="outlined"
                                 />
                             </Grid>
-                        </Grid>
-
-                        
-
-<<<<<<< HEAD
-
-=======
+                    
                         </Grid>
                         <Grid container spacing={2} className="input">
-                        <Grid item xs={6}>
+                        <Grid item xs={12}>
                             <MuiFileInput value={value} onChange={handleChange} label='Foto' style={{ width: '615px' }} />
 </Grid>
                         </Grid>
->>>>>>> 87a095208a91da0b80671c1e096d1a266dad2bde
+
 
                         <Grid container spacing={2}>
                             <Grid item xs={6}>
